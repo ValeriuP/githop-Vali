@@ -1,0 +1,95 @@
+.welcome__message{
+    color:  #e0e0e0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.home__container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1300px;
+  padding-top: 150px;
+  padding-left: 50px;
+
+
+}
+.motivational__message{
+    color:  #e0e0e0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-left: 150px;
+}
+.start__message{
+    display: flex;
+    color:   #e0e0e0;
+    font-size: 60px;
+    padding-top: 60px;
+    padding-right: 320px;
+    padding-left: 150px;
+    opacity: 1;
+    animation: pulse 3s ease-in-out infinite;
+}
+.descriere{
+    font-size: small;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Start at normal size */
+    }
+    50% {
+        transform: scale(1.2); /* Slightly larger */
+    }
+    100% {
+        transform: scale(1); /* Return to normal size */
+    }
+}
+@media (max-width: 768px) {
+    body {
+        background-image: url(); /* Optional: Different image for tablets */
+        background-size: cover;
+        background-position: center;
+    }
+    .home__container {
+        width: 700px; /* Full width for smaller screens */
+        padding: 50px;
+    }
+    h2 {
+        font-size: 1rem; /* Even smaller font size for small screens */
+    }
+    .start__message {
+        font-size: 1.2rem;
+    }
+    .MuiButton-root {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-image: url(); /* Optional: Different image for tablets */
+        background-size: cover;
+        background-position: center;
+    }
+    .home__container {
+        padding: 5px;
+    }
+    h2 {
+        font-size: 0.8rem; /* Font size for very small screens */
+    }
+    .start__message {
+        font-size: 1rem;
+    }
+    .MuiButton-root {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
